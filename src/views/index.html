@@ -1,0 +1,90 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>캡스톤 디자인 </title>
+    <!--  <link rel="stylesheet" href = "product.css">  -->
+    <style>
+        /* { margin: 0; padding: 0; } */
+        #container {
+            width: 1400px; height:800px;
+
+            position:relative;
+            left: 50%; top: 50%;
+            margin-left: -700px;
+            margin-top:-400px;
+        }
+        #heading {
+            font-size:32px;
+            font-weight:bold;
+            line-height:100px;
+            text-align: center;
+        }
+        body {
+            margin: 0 auto;
+            width: 960px
+        }
+        #middle {
+            width:600px; height:400px;
+
+            position:absolute;
+            left: 50%; top:50%;
+            margin-left: -300px;
+            margin-top:-200px;
+
+        } 
+        #search {
+            width:550px; height:30px;
+            border-color:black;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .small {
+            width:60px;
+            height:60px;
+            margin-left:60px;
+            margin-right:60px;
+        }
+        #icon {
+            margin-top:30px;
+            list-style:circle;
+			padding:0;
+        }
+        #icon > li {
+			float:left;
+		}
+        #icon img:hover {
+			cursor:pointer;
+		} 
+    </style>
+</head>
+<body>
+    <!-- #container = 중앙정렬-->
+    <div id="container">
+        <div id="middle">
+            <p id="heading">INSO</p>
+            <input type="text" name="search" id="search">
+            <div id="icon">
+                <!--학과지도-->
+                <img src="../public/img/free-icon-building-4020599.png" class="small" onclick="button1_click('학과지도');">
+
+                <!--학과소개-->
+                <img src="../public/img/artificial_intelligence_ai_robot_technology_icon_179494.png" class="small" onclick="button1_click('학과소개');">
+
+                <!--학과일정-->
+                <img src="../public/img/calender.png" class="small" onclick="button3_click('학과달력');">
+            </div>
+        </div>
+    </div>
+    <script>
+        function button1_click(s) {
+	        alert( s + " 버튼을 누르셨습니다.");
+            location.href="http://127.0.0.1:4000/capStoneMap.html";
+        }
+        function button3_click(s) {
+	        alert( s + " 버튼을 누르셨습니다.");
+            location.href="http://127.0.0.1:4000/capStoneCalender.html";
+        }
+        </script>
+</body>
