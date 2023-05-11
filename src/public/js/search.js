@@ -2,6 +2,7 @@
 function question() {
 	const searchText = document.getElementById('search').value; //text
 	console.log(searchText);
+	document.getElementById('search').value = '';
 	stop();
 }
 
