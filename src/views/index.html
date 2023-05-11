@@ -71,6 +71,9 @@
 				<p id="heading">INSO</p>
 				<input type="text" name="search" id="search" />
 				<button onclick="question()">검색</button>
+				<br />
+				<button onclick="start()">음성인식</button>
+				<button onclick="stop()">음성인식 종료</button>
 				<div id="icon">
 					<!--학과지도-->
 					<img src="../public/img/free-icon-building-4020599.png" class="small" onclick="button1_click('학과지도');" />
@@ -85,11 +88,11 @@
 		</div>
 		<script>
 			function button1_click(s) {
-				alert(s + ' 버튼을 누르셨습니다.');
+				//alert(s + ' 버튼을 누르셨습니다.');
 				location.href = 'http://127.0.0.1:4000/capStoneMap.html';
 			}
 			function button3_click(s) {
-				alert(s + ' 버튼을 누르셨습니다.');
+				//alert(s + ' 버튼을 누르셨습니다.');
 				location.href = 'http://127.0.0.1:4000/capStoneCalender.html';
 			}
 		</script>
