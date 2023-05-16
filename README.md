@@ -1,5 +1,3 @@
-npm init
-
 npm install
 
 //실행
