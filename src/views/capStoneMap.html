@@ -5,58 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>인공지능소프트웨어 학과 지도</title>
-		<style>
-			* {
-				background-color: grey;
-			}
-			.small {
-				width: 50px;
-				height: 50px;
-				margin-left: 60px;
-				margin-right: 60px;
-			}
-			.Big {
-				width: 1400px;
-				height: 800px;
-				margin-left: 60px;
-				margin-right: 60px;
-			}
-			#icon {
-				margin-top: 30px;
-				list-style: circle;
-				padding: 0;
-			}
-			#icon > li {
-				float: left;
-			}
-			#icon img:hover {
-				cursor: pointer;
-			}
-			#Map {
-				width: 1400px;
-				height: 800px;
-
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				margin-left: -700px;
-				margin-top: -400px;
-			}
-		</style>
+		<link rel="stylesheet" href = "../public/css/map.css">
+		<script src="../public/js/button.js"></script>
 	</head>
 	<body>
-		<div id="icon" onclick="button1_click('hello');">
+		<div id="icon" onclick="backbutton();">
 			<img src="../public/img/free-icon-curve-left-arrow-20582.png" class="small" />
 		</div>
 		<div id="Map">
 			<img src="../public/img/capstoneMap.png" class="Big" />
 		</div>
 		<!--<button id="button1" onclick="button1_click('hello');">버튼1</button>  -->
-		<script>
-			function button1_click(s) {
-				alert(s + ' 버튼을 누르셨습니다.');
-				location.href = 'uiUxDesignFirst.html';
-			}
-		</script>
 	</body>
 </html>

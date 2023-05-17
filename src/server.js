@@ -11,6 +11,7 @@ app.engine('html', require('ejs').renderFile);
 app.use("/public", express.static(__dirname + "/public"));
 app.get('/', (req, res) => res.render("index.html"))
 app.get('/capStoneMap.html', (req, res) => res.render("capStoneMap.html"))
+app.get('/introduce.html',(req,res) => res.render("introduce.html"))
 app.get('/capStoneCalender.html',(req,res) => res.render("capStoneCalender.html"))
 
 const handleListen = () => console.log('Hello');
