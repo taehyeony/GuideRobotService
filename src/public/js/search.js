@@ -6,7 +6,7 @@ function question() {
 	stop();
 }
 
-//음성으로 질문을 받는 경우
+//음성으로 질문을 받는 경우.
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // 인스턴스 생성
