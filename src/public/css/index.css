@@ -2,22 +2,13 @@
 #container {
     width: 1400px;
     height: 800px;
-
-    position: relative;
     left: 50%;
-    top: 50%;
-    margin-left: -700px;
-    margin-top: -400px;
 }
 #heading {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 100px;
     text-align: center;
-}
-body {
-    margin: 0 auto;
-    width: 960px;
 }
 #middle {
     width: 600px;
@@ -26,6 +17,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    margin: 0 auto;
     margin-left: -300px;
     margin-top: -200px;
 }

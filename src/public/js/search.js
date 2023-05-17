@@ -30,7 +30,7 @@ recognition.addEventListener('result', (e) => {
 	let interimTranscript = '';
 	for (let i = e.resultIndex, len = e.results.length; i < len; i++) {
 		let transcript = e.results[i][0].transcript;
-		console.log(transcript);
+		// console.log(transcript);
 		if (e.results[i].isFinal) {
 			speechToText += transcript;
 		} else {
@@ -54,4 +54,15 @@ function abort() {
 
 function stop() {
 	recognition.stop();
+	speechToText = '';
+}
+
+function toggle_img_voiceRecording() {
+    if (document.getElementById("icon-recording").src == "http://localhost:4000/public/img/voicerecording.png") {
+        document.getElementById("icon-recording").src = "../public/img/messaging_message_chat_bubble_icon.png"
+        start();
+    } else { 
+        document.getElementById("icon-recording").src = "../public/img/voicerecording.png"
+        stop();
+    }
 }
