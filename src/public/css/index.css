@@ -30,7 +30,7 @@ body {
     margin-top: -200px;
 }
 #search {
-    width: 550px;
+    width: 600px;
     height: 30px;
     border-color: black;
     border-radius: 20px;
@@ -50,6 +50,32 @@ body {
 #icon > li {
     float: left;
 }
-#icon img:hover {
-    cursor: pointer;
+#icon img{
+    margin: 0 68px;
+    padding: 0;
+}
+
+.search-bar {
+  position: absolute;
+  margin:0 auto;
+  width: 600px;
+}
+
+.search-bar input {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-bar img {
+  position : absolute;
+  width: 30px;
+  top: 1px;
+  right: 10px;
+}
+
+.buttons{
+    margin-top: 20px;
 }
