@@ -24,17 +24,17 @@
     font-size:30px;
 }
 td {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .Calendar {
-    height: 900px;
-    font-size: 30px; 
+    height: 500px;
+    font-size: 25px; 
     position: absolute;
     top: 50%;
     text-align: center;
-    margin-top: -450px;
+    margin-top: -250px;
 }
 
 .Calendar>thead>tr:first-child>td { font-weight: bold; }
