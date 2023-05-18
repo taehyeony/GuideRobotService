@@ -3,6 +3,7 @@ function question() {
 	const searchText = document.getElementById('search').value; //text
 	console.log(searchText);
 	document.getElementById('search').value = '';
+	document.getElementById("icon-recording").src = "http://localhost:4000/public/img/voicerecording.png"
 	stop();
 }
 
@@ -59,10 +60,10 @@ function stop() {
 
 function toggle_img_voiceRecording() {
     if (document.getElementById("icon-recording").src == "http://localhost:4000/public/img/voicerecording.png") {
-        document.getElementById("icon-recording").src = "../public/img/messaging_message_chat_bubble_icon.png"
+        document.getElementById("icon-recording").src = "http://localhost:4000/public/img/messaging_message_chat_bubble_icon.png"
         start();
     } else { 
-        document.getElementById("icon-recording").src = "../public/img/voicerecording.png"
+        document.getElementById("icon-recording").src = "http://localhost:4000/public/img/voicerecording.png"
         stop();
     }
 }
