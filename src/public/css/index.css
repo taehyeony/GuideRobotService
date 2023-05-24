@@ -1,74 +1,74 @@
 /* { margin: 0; padding: 0; } */
 #container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 #heading {
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 100px;
-    text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 100px;
+	text-align: center;
 }
 #middle {
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    margin-top: -200px;
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;
 }
 #search {
-    width: 600px;
-    height: 30px;
-    border-color: black;
-    border-radius: 20px;
-    font-size: 20px;
+	width: 600px;
+	height: 30px;
+	border-color: black;
+	border-radius: 20px;
+	font-size: 20px;
 }
 .small {
-    width: 60px;
-    height: 60px;
-    margin-left: 60px;
-    margin-right: 60px;
+	width: 60px;
+	height: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 #icon {
-    margin-top: 100px;
-    list-style: circle;
-    padding: 0;
+	margin-top: 100px;
+	list-style: circle;
+	padding: 0;
 }
 #icon > li {
-    float: left;
+	float: left;
 }
-#icon img{
-    margin: 0 68px;
-    padding: 0;
+#icon img {
+	margin: 0 68px;
+	padding: 0;
 }
 
 .search-bar {
-  position: absolute;
-  margin:0 auto;
-  width: 600px;
+	position: absolute;
+	margin: 0 auto;
+	width: 600px;
 }
 
 .search-bar input {
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
-  text-align: center;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 14px;
+	text-align: center;
 }
 
 .search-bar img {
-  position : absolute;
-  width: 30px;
+	position: absolute;
+	width: 30px;
 }
 
-#icon-search{
-    right: 10px;
+#icon-search {
+	right: 10px;
 }
 
-#icon-recording{
-    right: -40px;
+#icon-recording {
+	right: -40px;
 }
 
-.buttons{
-    margin-top: 20px;
+.buttons {
+	margin-top: 20px;
 }
