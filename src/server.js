@@ -21,10 +21,8 @@ const server = http.createServer(app);
 //ws 서버
 const wss = new WebSocket.Server({ server });
 
-function handelConnect(socket) {
-	console.log(socket);
-}
-
-wss.on('connection', handelConnect);
+wss.on('connection', (socket) => {
+	socket.send('hello');
+});
 
 server.listen(4000, handleListen);
