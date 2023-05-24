@@ -4,7 +4,9 @@
 	"description": "Guide Robot Service",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon"
+		"dev": "nodemon",
+		"start": "webpack --watch",
+		"build": "webpack"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,7 +16,10 @@
 		"@babel/core": "^7.21.8",
 		"@babel/node": "^7.20.7",
 		"@babel/preset-env": "^7.21.5",
-		"nodemon": "^2.0.22"
+		"babel-loader": "^9.1.2",
+		"nodemon": "^2.0.22",
+		"webpack": "^5.83.1",
+		"webpack-cli": "^5.1.1"
 	},
 	"dependencies": {
 		"ejs": "^3.1.9",
