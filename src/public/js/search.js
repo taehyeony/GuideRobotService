@@ -1,13 +1,4 @@
-//text로 질문을 받는 경우
-function question() {
-	const searchText = document.getElementById('search').value; //text
-	console.log(searchText);
-	document.getElementById('search').value = '';
-	document.getElementById("icon-recording").src = "http://localhost:4000/public/img/voicerecording.png"
-	stop();
-}
-
-//음성으로 질문을 받는 경우.
+//음성으로 TEXT입력
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // 인스턴스 생성
@@ -59,11 +50,11 @@ function stop() {
 }
 
 function toggle_img_voiceRecording() {
-    if (document.getElementById("icon-recording").src == "http://localhost:4000/public/img/voicerecording.png") {
-        document.getElementById("icon-recording").src = "http://localhost:4000/public/img/messaging_message_chat_bubble_icon.png"
-        start();
-    } else { 
-        document.getElementById("icon-recording").src = "http://localhost:4000/public/img/voicerecording.png"
-        stop();
-    }
+	if (document.getElementById('icon-recording').src == 'http://localhost:4000/public/img/voicerecording.png') {
+		document.getElementById('icon-recording').src = 'http://localhost:4000/public/img/messaging_message_chat_bubble_icon.png';
+		start();
+	} else {
+		document.getElementById('icon-recording').src = 'http://localhost:4000/public/img/voicerecording.png';
+		stop();
+	}
 }
