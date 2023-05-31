@@ -12,12 +12,7 @@ app.get('/', (req, res) => res.render('index.html'));
 app.get('/capStoneMap.html', (req, res) => res.render('capStoneMap.html'));
 app.get('/introduce.html', (req, res) => res.render('introduce.html'));
 app.get('/capStoneCalender.html', (req, res) => res.render('capStoneCalender.html'));
-
-app.use(function (req, res, next) {
-	console.log('첫번째 미들웨어에서 요청을 처리함.');
-
-	res.redirect('index.html');
-});
+app.use((req, res) => res.status(404).redirect('/'));
 
 const handleListen = () => console.log('Hello');
 
