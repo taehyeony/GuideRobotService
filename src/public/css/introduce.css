@@ -4,26 +4,9 @@ h1{
 div.contain{
     display: flex;
 }
-.small {
-    width: 50px;
-    height: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
 .Big {
     width: 1400px;
     height: 800px;
     margin-left: 60px;
     margin-right: 60px;
-}
-#icon {
-    margin-top: 30px;
-    list-style: circle;
-    padding: 0;
-}
-#icon > li {
-    float: left;
-}
-#icon img:hover {
-    cursor: pointer;
 }
