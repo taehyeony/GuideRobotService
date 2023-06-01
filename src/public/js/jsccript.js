@@ -2,10 +2,10 @@ const video = document.getElementById('video'); // take the video element from h
 
 Promise.all([
 	//promise.all to call these asyncronous calls in parallel which is easy to execute.
-	faceapi.nets.tinyFaceDetector.loadFromUri('http://127.0.0.1:4000/public/js/models'),
-	faceapi.nets.faceLandmark68Net.loadFromUri('http://127.0.0.1:4000/public/js/models'), //different parts of faces = mouth,nose ,eyes
-	faceapi.nets.faceRecognitionNet.loadFromUri('http://127.0.0.1:4000/public/js/models'), //where is the face
-	faceapi.nets.faceExpressionNet.loadFromUri('http://127.0.0.1:4000/public/js/models'), //happy ,sad etc
+	faceapi.nets.tinyFaceDetector.loadFromUri('http://localhost:4000/public/models'),
+	faceapi.nets.faceLandmark68Net.loadFromUri('http://localhost:4000/public/models'), //different parts of faces = mouth,nose ,eyes
+	faceapi.nets.faceRecognitionNet.loadFromUri('http://localhost:4000/public/models'), //where is the face
+	faceapi.nets.faceExpressionNet.loadFromUri('http://localhost:4000/public/models'), //happy ,sad etc
 ]).then(startVideo);
 
 function startVideo() {
