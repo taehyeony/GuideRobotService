@@ -1,63 +1,12 @@
-#calendar{
-    display: flex;
-    justify-content: center;
+/* body 스타일 */
+html, body {
+  overflow: hidden;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
 }
-
-.small {
-    width:50px;
-    height:50px;
-    margin-left:60px;
-    margin-right:60px;
-}
-#icon {
-    margin-top :30px;
-    list-style :circle;
-    padding :0;
-} 
-#icon > li {
-    float :left;
-} 
-#icon img:hover {
-    cursor :pointer;
-}
-#calYear, #calMonth {
-    font-size:30px;
-}
-td {
-    width: 70px;
-    height: 70px;
-}
-
-.Calendar {
-    height: 500px;
-    font-size: 25px; 
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    margin-top: -250px;
-}
-
-.Calendar>thead>tr:first-child>td { font-weight: bold; }
-
-.Calendar>thead>tr:last-child>td {
-    background-color: gray;
-    color: white;
-}        
-
-.pastDay{ background-color: lightgray; }
-
-.today{            
-    background-color: #FFCA64;            
-    cursor: pointer;
-}
-
-.futureDay{            
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-
-.futureDay.choiceDay, .today.choiceDay{            
-    background-color: #3E85EF;            
-    color: #fff;
-    cursor: pointer;
+/* 캘린더 위의 해더 스타일(날짜가 있는 부분) */
+.fc-header-toolbar {
+  padding-top: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
