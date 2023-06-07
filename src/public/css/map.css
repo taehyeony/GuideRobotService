@@ -1,11 +1,13 @@
 /* * {
     background-color: ;
 } */
+
 .Big {
-    width: 1400px;
-    height: 800px;
-    margin-left: 60px;
-    margin-right: 60px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
 }
 #Map {
     width: 1400px;
