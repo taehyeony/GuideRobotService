@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="../public/css/index.css" />
 		<script src="../public/js/search.js"></script>
 		<script src="../public/js/button.js"></script>
-		<script src="../public/js/chatBot.js"></script>
 		<style>
 			video {
 				visibility: hidden;
@@ -25,9 +24,11 @@
 			<div id="middle">
 				<h1 id="heading">INSO</h1>
 				<div class="search-bar">
-					<input type="text" name="search" id="search" placeholder="검색" />
-					<img src="../public/img/search icon.png" alt="검색아이콘" id="icon-search" onclick="question()" />
-					<img src="../public/img/voicerecording.png" alt="음성인식" id="icon-recording" onclick="toggle_img_voiceRecording()" />
+					<form action="" method="post">
+						<input type="text" name="search" id="search" placeholder="검색" />
+						<img src="../public/img/search icon.png" alt="검색아이콘" id="icon-search" onclick="submit()" />
+						<img src="../public/img/voicerecording.png" alt="음성인식" id="icon-recording" onclick="toggle_img_voiceRecording()" />
+					</form>
 				</div>
 				<br />
 				<div id="icon">
